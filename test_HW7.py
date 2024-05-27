@@ -45,7 +45,7 @@ def test_read_and_check_xlsx_file():
 
 
 # Читаем и проверяем содержимое .pdf файла в архиве
-def test_read_and_check_xlsx_file():
+def test_read_and_check_pdf_file():
     with ZipFile(ZIPPED_RESOURCES) as zip_file:
         with zip_file.open('PDFfile.pdf') as pdf_file:
             reader = PdfReader(pdf_file)
